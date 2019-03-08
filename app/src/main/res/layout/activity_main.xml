@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Message"
+                android:singleLine="false">
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/editTextMessage"
+                android:ems="10"
+                android:inputType="phone" >
+            </EditText>
+
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextNumber"
+                android:layout_alignBottom="@+id/editTextNumber"
+                android:layout_alignParentRight="true"
+                android:text="Contact" />
+
+            <Button
+                android:id="@+id/buttonTimePickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonContact"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:text="Select Time" />
+
+            <Button
+                android:id="@+id/buttonDatePickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/buttonTimePickup"
+                android:layout_alignBottom="@+id/buttonTimePickup"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:text="Select Date" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buttonDatePickup"
+                android:layout_marginTop="40dp"
+                android:text="Select The Frequency"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+                <RadioButton
+                    android:id="@+id/oneTime"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="One Time" />
+                <RadioButton
+                    android:id="@+id/fifteenMinutes"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="15 minutes" />
+                <RadioButton
+                    android:id="@+id/halfHour"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Half an Hour" />
+                <RadioButton
+                    android:id="@+id/hour"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="An Hour" />
+                <RadioButton
+                    android:id="@+id/halfDay"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Half a Day" />
+                <RadioButton
+                    android:id="@+id/daily"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Daily" />
+                <RadioButton
+                    android:id="@+id/weekly"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Weekly" />
+                <RadioButton
+                    android:id="@+id/monthly"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Monthly" />
+                <RadioButton
+                    android:id="@+id/Yearly"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Yearly" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginTop="40dp"
+                android:text="Confirm" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
